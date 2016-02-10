@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+
+  @media (min-width: $screen-phone) {
+    max-width: $screen-tablet;
+    width: 90%;
+  }
+
+  @media (min-width: $screen-tablet) {
+    max-width: $screen-desktop;
+    width: 80%;
+  }
+}
