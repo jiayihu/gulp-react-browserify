@@ -20,12 +20,3 @@ $screen-phone: 480px;
 $screen-tablet: 768px;
 $screen-desktop: 992px;
 $screen-lg-desktop: 1200px;
-
-@mixin avatar {
-  border-width: 3px;
-  border-radius: 50%;
-  border-style: solid;
-  width: 54px;
-  height: 54px;
-  background: $accent-secondary;
-}
