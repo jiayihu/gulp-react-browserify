@@ -1,12 +1,8 @@
 bower_components
 node_modules
-dist
-public
 .publish
 .tmp
 app.yaml
-testing.js
-docs
 webapp/public
 
 # Compiled source #
