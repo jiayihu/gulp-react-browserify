@@ -32,9 +32,8 @@ var appBundle = browserify(customOpts);
 appBundle.plugin(watchify);
 appBundle.external(deps);
 
-var buildApp = function(ids) {
-  console.log(ids);
-  
+var buildApp = function() {
+
   return appBundle
     .bundle()
     .on('error', console.log)
