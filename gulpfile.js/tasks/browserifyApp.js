@@ -1,4 +1,5 @@
 var config = require('../config.json');
+var packageManifest = require('../../package.json');
 
 var watchify = require('watchify');
 var gulp = require('gulp');
@@ -8,7 +9,6 @@ var gulpif = require('gulp-if');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var path = require('path');
-var assign = require('lodash.assign');
 var browserSync  = require('browser-sync');
 
 var paths = {
@@ -17,19 +17,26 @@ var paths = {
 };
 
 var isProduction = process.env.NODE_ENV === 'production';
+
+var deps = Object.keys(packageManifest.dependencies); //[ 'react', 'react-dom' ]
 var customOpts = {
+  cache: {},
+  packageCache: {},
   entries: paths.src,
-  debug: isProduction? false : true,
+  debug: isProduction? false : false,
   transform: [
-    ['babelify', {presets: ['es2015', 'react']}],
-    ['envify']
+    ['babelify', {presets: ['es2015', 'react']}]
   ]
 };
-var opts = assign({}, watchify.args, customOpts);
-var b = watchify(browserify(opts));
+var appBundle = browserify(customOpts);
+appBundle.plugin(watchify);
+appBundle.external(deps);
 
-var bundle = function() {
-  return b.bundle()
+var buildApp = function(ids) {
+  console.log(ids);
+  
+  return appBundle
+    .bundle()
     .on('error', console.log)
     .pipe(source('main.js'))
     .pipe(buffer())
@@ -39,6 +46,6 @@ var bundle = function() {
     .pipe(browserSync.stream());
 };
 
-b.on('update', bundle);
+appBundle.on('update', buildApp);
 
-gulp.task('scripts', bundle);
+gulp.task('scripts', buildApp);
