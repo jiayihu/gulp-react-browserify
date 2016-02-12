@@ -51,10 +51,10 @@
     },
 
     "scripts": {
-      "main": "app.js",
+      "main": "app.jsx",
       "src": "javascripts",
       "dest": "js",
-      "extensions": ["js"]
+      "extensions": ["js", "jsx"]
     },
 
     "server": {

@@ -23,7 +23,7 @@ var customOpts = {
   cache: {},
   packageCache: {},
   entries: paths.src,
-  debug: isProduction? false : false,
+  debug: isProduction? false : true,
   transform: [
     ['babelify', {presets: ['es2015', 'react']}]
   ]

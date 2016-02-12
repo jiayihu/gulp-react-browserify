@@ -8,7 +8,7 @@
 ## Features
 - Gulp with BrowserSync, Nunjucks templating, Scss support, CSSNano, deployment with GitHub Pages etc.
 - Browserify with Watchify
-- Multiple bundles: **vendor.js** with React and the other dependencies and **main.js** with your own code. Running `gulp` will build both bundles and watchify for only your code.
+- Multiple bundles: **vendor.js** with React and the other dependencies and **main.js** with your own code. Run `gulp vendorApp` to build the vendor.js bundle whenever you add a dependency.
 - Support for JSX conversion and ES2015 with [Babelify](https://github.com/babel/babelify) and its presets
 - Production mode with [envify](https://www.npmjs.com/package/envify) and [uglify](https://www.npmjs.com/package/gulp-uglify)
 - [ESLint](http://eslint.org) with support for React.js
