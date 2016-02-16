@@ -3,7 +3,7 @@ var packageManifest = require('../../package.json');
 
 var gulp = require('gulp');
 var browserify = require('browserify');
-var envify = require('envify');
+var envify = require('loose-envify');
 var uglify = require('gulp-uglify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
