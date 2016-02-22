@@ -27,12 +27,6 @@ Production mode
 ``` javascript
 npm run production
 ```
-### Optional
-
-Run node.js server with watch (Note: current webapp/server.js file is empty and Express.js is not included in the dependencies)
-```
-gulp server
-```
 ## Todo
 - Redux support
 - Jest testing

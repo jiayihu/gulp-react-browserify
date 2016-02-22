@@ -41,8 +41,7 @@
       "htmlmin": {
         "collapseWhitespace": true
       },
-      "excludeFolders": ["layouts", "shared", "macros", "data", "includes"],
-      "extensions": ["html", "json"]
+      "extensions": ["html"]
     },
 
     "images": {
@@ -56,10 +55,6 @@
       "src": "javascripts",
       "dest": "js",
       "extensions": ["js", "jsx"]
-    },
-
-    "server": {
-      "app": "./webapp/server.js"
     },
 
     "static": {
