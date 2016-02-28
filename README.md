@@ -6,7 +6,8 @@
 > Develop you React.js application with Gulp.js and [Browserify](https://github.com/substack/node-browserify)
 
 ## Features
-- Gulp with BrowserSync, Nunjucks templating, Scss support, CSSNano, deployment with GitHub Pages etc.
+- Gulp with BrowserSync, Scss support, CSSNano, deployment with GitHub Pages etc.
+- [HTML5 Boilerplate](https://html5boilerplate.com) included
 - Browserify with Watchify
 - Multiple bundles: **vendor.js** with React and the other dependencies and **main.js** with your own code. Run `gulp vendorApp` to build the vendor.js bundle whenever you add a dependency.
 - Support for JSX conversion and ES2015 with [Babelify](https://github.com/babel/babelify) and its presets
