@@ -1,14 +1,14 @@
 {
   "root": {
     "src": "./app",
-    "dest": "./webapp/public"
+    "dest": "./public"
   },
 
   "tasks": {
     "browserSync": {
       "browser": "Google Chrome",
       "server": {
-        "baseDir": "./webapp/public"
+        "baseDir": "./public"
       },
       "notify": false,
       "online": false

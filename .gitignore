@@ -4,6 +4,7 @@ node_modules
 .tmp
 app.yaml
 webapp/public
+public
 
 # Compiled source #
 ###################
