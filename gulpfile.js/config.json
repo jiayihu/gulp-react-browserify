@@ -10,8 +10,7 @@
       "server": {
         "baseDir": "./public"
       },
-      "notify": false,
-      "online": false
+      "notify": false
     },
 
     "css": {
@@ -60,6 +59,12 @@
     "static": {
       "src": "static",
       "dest": "./"
+    },
+
+    "svgSprite": {
+      "src": "icons",
+      "dest": "images",
+      "extensions": ["svg"]
     }
   }
 }
