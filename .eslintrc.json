@@ -1,40 +1,9 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-
   "rules": {
-    "indent": [
-        2,
-        2
-    ],
-    "quotes": [
-        2,
-        "single"
-    ],
-    "linebreak-style": [
-        2,
-        "unix"
-    ],
-    "no-console": [
-        0
-    ],
-    "no-unused-vars": [
-      1
-    ],
-    "no-undefined": [
-      1
-    ],
-    "no-use-before-define": [
-      2
-    ],
-    "semi": [
-        2,
-        "always"
-    ],
+    "max-len": [2, {"code": 120, "tabWidth": 2, "ignoreUrls": true}],
+    "no-console": 0,
+    "no-shadow": 0,
+    "react/prefer-stateless-function": 0,
     "valid-jsdoc": [
       1,
       {
@@ -45,14 +14,12 @@
   },
 
   "env": {
-    "browser": true,
-    "mocha": true,
-    "node": true
+    "mocha": true
   },
 
   "plugins": [
     "react"
   ],
 
-  "extends": "eslint:recommended"
+  "extends": ["eslint:recommended", "airbnb"]
 }

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "gulp",
-    "clean": "rm -rf webapp/public && mkdir webapp/public ",
+    "clean": "rm -rf ./public && mkdir ./public ",
     "dev": "gulp",
     "production": "npm run clean && NODE_ENV=production gulp production",
     "test": "echo \"Error: no test specified\" && exit 1"
