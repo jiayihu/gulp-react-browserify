@@ -1,41 +1,32 @@
 {
-  "name": "gulp-react-browserify",
-  "version": "0.0.1",
-  "description": "React.js development with Gulp and Browserify",
+  "name": "jiayihu",
+  "version": "0.1.0",
+  "description": "Personal portfolio",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jiayihu/gulp-react-browserify.git"
+    "url": "git@github.com:jiayihu/jiayihu.github.io.git"
   },
   "scripts": {
     "build": "gulp",
-    "clean": "rm -rf ./public && mkdir ./public ",
+    "clean": "rm -rf public && mkdir public ",
     "dev": "gulp",
     "production": "npm run clean && NODE_ENV=production gulp production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jiayi hu",
-  "license": "MIT",
   "devDependencies": {
-<<<<<<< HEAD
-    "babel-core": "^6.5.1",
-=======
     "babel-core": "^6.7.4",
     "babel-eslint": "^6.0.2",
->>>>>>> 29f9a6b... Added svgSprite task to gulp
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
-    "browser-sync": "^2.9.11",
+    "browser-sync": "^2.11.2",
     "browserify": "^13.0.0",
     "browserify-shim": "^3.8.12",
     "connect-history-api-fallback": "^1.2.0",
     "del": "^2.0.2",
-<<<<<<< HEAD
-    "eslint": "^2.2.0",
-=======
     "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.2.0",
->>>>>>> 29f9a6b... Added svgSprite task to gulp
     "eslint-plugin-react": "^4.1.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
@@ -58,9 +49,12 @@
     "watchify": "^3.5.0"
   },
   "dependencies": {
-    "react": "^15.0.1",
-    "react-dom": "^0.14.7"
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-router": "^2.0.1"
   },
-  "browser": {},
-  "browserify-shim": {}
+  "browser": {
+  },
+  "browserify-shim": {
+  }
 }
