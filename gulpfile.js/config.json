@@ -7,10 +7,11 @@
   "tasks": {
     "browserSync": {
       "browser": "Google Chrome",
+      "historyAPI": true,
+      "notify": false,
       "server": {
         "baseDir": "./public"
-      },
-      "notify": false
+      }
     },
 
     "css": {

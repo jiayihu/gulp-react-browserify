@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "rules": {
         "indent": [
             2,
@@ -51,4 +52,29 @@
     ],
 
     "extends": "eslint:recommended"
+=======
+  "rules": {
+    "max-len": [2, {"code": 120, "tabWidth": 2, "ignoreUrls": true}],
+    "no-console": 0,
+    "no-shadow": 0,
+    "react/prefer-stateless-function": 0,
+    "valid-jsdoc": [
+      1,
+      {
+        "requireReturn": false,
+        "requireReturnDescription": false
+      }
+    ]
+  },
+
+  "env": {
+    "mocha": true
+  },
+
+  "plugins": [
+    "react"
+  ],
+
+  "extends": ["eslint:recommended", "airbnb"]
+>>>>>>> ff428fc... Add config & doc for HistoryAPI and update ESLint to Airbnb Style Guide
 }
