@@ -35,7 +35,7 @@ var buildVendor = function() {
     .pipe(gulpif(isProduction, envify()))
     .pipe(source('vendor.js'))
     .pipe(buffer())
-    .pipe(uglify())
+    .pipe(gulpif(isProduction, uglify()))
     .pipe(gulp.dest(paths.dest));
 };
 
