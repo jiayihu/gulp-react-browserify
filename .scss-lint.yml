@@ -11,3 +11,6 @@ linters:
 
   HexNotation:
     enabled: false
+
+  SelectorFormat:
+    convention: 'hyphenated_BEM'
