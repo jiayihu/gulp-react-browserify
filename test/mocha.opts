@@ -1,0 +1,2 @@
+app/javascripts/**/tests/*.test.js
+--compilers js:babel-register
