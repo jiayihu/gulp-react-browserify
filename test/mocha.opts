@@ -1,2 +1,2 @@
-app/javascripts/**/tests/*.test.js
+--recursive
 --compilers js:babel-register

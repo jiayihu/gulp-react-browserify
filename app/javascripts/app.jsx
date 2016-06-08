@@ -1,9 +1,9 @@
-'use strict';
+import React from 'react';
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-ReactDOM.render(
-  <h1>Hello, world</h1>,
-  document.getElementById('app')
-);
+export default class App extends React.Component {
+  render() {
+    return (
+      <h1>Hello world!</h1>
+    );
+  }
+}

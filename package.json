@@ -7,9 +7,10 @@
     "url": "git@github.com:jiayihu/jiayihu.github.io.git"
   },
   "scripts": {
-    "clean": "rm -rf public && mkdir public ",
-    "start": "gulp",
     "build": "npm run clean && NODE_ENV=production gulp production",
+    "clean": "rm -rf public && mkdir public ",
+    "deploy": "gulp deploy",
+    "start": "gulp",
     "test": "mocha || true",
     "test:watch": "mocha --watch"
   },
@@ -47,6 +48,7 @@
     "gulp-uglify": "^1.5.2",
     "loose-envify": "^1.1.0",
     "mocha": "^2.4.5",
+    "react-addons-test-utils": "^15.1.0",
     "require-dir": "^0.3.0",
     "resolve": "^1.1.7",
     "run-sequence": "^1.1.4",
